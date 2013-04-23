@@ -12,7 +12,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    //Bouton commencer
+    UIButton *btnCommencer = [UIButton buttonWithType:UIButtonTypeCustom];
+    btnCommencer.frame = CGRectMake(0.0, 20.0, self.window.frame.size.width, self.window.frame.size.height/2);
+    [btnCommencer setBackgroundColor:[UIColor colorWithRed:0.0 green:1.0 blue:0.4 alpha:1.0]];
+    [btnCommencer setTitle:@"Commencer" forState:UIControlStateNormal];
+
+    //Bouton Réglage
+    UIButton *btnReglage = [UIButton buttonWithType:UIButtonTypeCustom];
+    btnReglage.frame = CGRectMake(0.0, btnCommencer.frame.size.height+20, self.window.frame.size.width, (self.window.frame.size.height/10));
+    [btnReglage setBackgroundColor:[UIColor colorWithRed:0.0 green:0.1 blue:0.7 alpha:1.0]];
+    [btnReglage setTitle:@"Réglages" forState:UIControlStateNormal];
+
+    //Bouton stat
+    UIButton *btnStats = [UIButton buttonWithType:UIButtonTypeCustom];
+    btnStats.frame = CGRectMake(0.0, btnCommencer.frame.size.height + btnReglage.frame.size.height + 20, self.window.frame.size.width, (self.window.frame.size.height - (btnCommencer.frame.size.height + btnReglage.frame.size.height + 20)));
+    [btnStats setBackgroundColor:[UIColor colorWithRed:0.1 green:1.0 blue:1.0 alpha:1.0]];
+    [btnStats setTitle:@"Statistiques" forState:UIControlStateNormal];
+    
+    [self.window addSubview:btnCommencer];
+    [self.window addSubview:btnReglage];
+    [self.window addSubview:btnStats];
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

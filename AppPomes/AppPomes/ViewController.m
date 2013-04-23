@@ -20,6 +20,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSString *msg = @"Hello World";
     NSLog(@"%@",msg);
+    
 }
 
 - (void)didReceiveMemoryWarning
