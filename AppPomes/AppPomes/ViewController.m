@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Compteur.h"
 
 @interface ViewController ()
     
@@ -74,10 +75,22 @@ UIButton *btnStats;
         [button setAlpha:1.0];
     }
     
-    NSLog(@"%@",button.titleLabel.text);
-    NSLog(@"%d",button.tag);
+    if (button.tag == 1)
+    {
+        [self afficherCompteur];
+    }
+    
+    NSLog(@"Button: %@",button.titleLabel.text);
+    NSLog(@"Tag: %d",button.tag);
     
 }
+
+- (void)afficherCompteur
+{
+    _compteur = [[Compteur alloc]initWithFrame:self.view.bounds];
+    [self.view addSubview:_compteur];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

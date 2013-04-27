@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Compteur.h"
+
+@class Compteur;
 
 @interface ViewController : UIViewController
+{
+    Compteur *_compteur;
+}
 
 @end
 

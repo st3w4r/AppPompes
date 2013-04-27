@@ -19,6 +19,7 @@
 		7A7281D71726BA7500A3C8E2 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7281D51726BA7500A3C8E2 /* MainStoryboard_iPhone.storyboard */; };
 		7A7281DA1726BA7500A3C8E2 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7281D81726BA7500A3C8E2 /* MainStoryboard_iPad.storyboard */; };
 		7A7281DD1726BA7500A3C8E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7281DC1726BA7500A3C8E2 /* ViewController.m */; };
+		7A7282781729DF6D00A3C8E2 /* Compteur.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7282771729DF6D00A3C8E2 /* Compteur.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		7A7281D91726BA7500A3C8E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		7A7281DB1726BA7500A3C8E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7A7281DC1726BA7500A3C8E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7A7282761729DF6D00A3C8E2 /* Compteur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compteur.h; sourceTree = "<group>"; };
+		7A7282771729DF6D00A3C8E2 /* Compteur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compteur.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				7A7281D81726BA7500A3C8E2 /* MainStoryboard_iPad.storyboard */,
 				7A7281DB1726BA7500A3C8E2 /* ViewController.h */,
 				7A7281DC1726BA7500A3C8E2 /* ViewController.m */,
+				7A7282761729DF6D00A3C8E2 /* Compteur.h */,
+				7A7282771729DF6D00A3C8E2 /* Compteur.m */,
 				7A7281C41726BA7500A3C8E2 /* Supporting Files */,
 			);
 			path = AppPomes;
@@ -180,6 +185,7 @@
 				7A7281CA1726BA7500A3C8E2 /* main.m in Sources */,
 				7A7281CE1726BA7500A3C8E2 /* AppDelegate.m in Sources */,
 				7A7281DD1726BA7500A3C8E2 /* ViewController.m in Sources */,
+				7A7282781729DF6D00A3C8E2 /* Compteur.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
