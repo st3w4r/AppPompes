@@ -12,6 +12,11 @@
 
     UILabel *labCompteur;
     NSNumber *compteurPompes;
+    
+    UILabel *labTimer;
+    NSTimer *refreshTimer;
+    NSNumber *leTimer;
+    NSNumber *leTimerInterval;
 }
 
 @end

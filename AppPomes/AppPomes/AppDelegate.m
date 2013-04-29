@@ -16,7 +16,8 @@
 //    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //    self.window.backgroundColor = [UIColor whiteColor];
 //    [self.window makeKeyAndVisible];
-
+//    [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleDefault];
+//    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
     return YES;
 }
 							
