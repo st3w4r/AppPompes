@@ -10,10 +10,13 @@
 #import "Compteur.h"
 
 @class Compteur;
+@class Statistiques;
 
 @interface ViewController : UIViewController
 {
     Compteur *_compteur;
+    Statistiques *_statistiques;
+    UIView *laVuePrincipal;
 }
 
 @end

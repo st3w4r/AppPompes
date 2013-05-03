@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A0E5E5B173335FA009F322A /* Statistiques.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0E5E5A173335FA009F322A /* Statistiques.m */; };
 		7A7281BE1726BA7500A3C8E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7281BD1726BA7500A3C8E2 /* UIKit.framework */; };
 		7A7281C01726BA7500A3C8E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7281BF1726BA7500A3C8E2 /* Foundation.framework */; };
 		7A7281C21726BA7500A3C8E2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A7281C11726BA7500A3C8E2 /* CoreGraphics.framework */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A0E5E59173335FA009F322A /* Statistiques.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Statistiques.h; path = ../Statistiques.h; sourceTree = "<group>"; };
+		7A0E5E5A173335FA009F322A /* Statistiques.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Statistiques.m; path = ../Statistiques.m; sourceTree = "<group>"; };
 		7A7281BA1726BA7500A3C8E2 /* AppPomes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPomes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7281BD1726BA7500A3C8E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7A7281BF1726BA7500A3C8E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,6 +105,8 @@
 				7A7281DC1726BA7500A3C8E2 /* ViewController.m */,
 				7A7282761729DF6D00A3C8E2 /* Compteur.h */,
 				7A7282771729DF6D00A3C8E2 /* Compteur.m */,
+				7A0E5E59173335FA009F322A /* Statistiques.h */,
+				7A0E5E5A173335FA009F322A /* Statistiques.m */,
 				7A7281C41726BA7500A3C8E2 /* Supporting Files */,
 			);
 			path = AppPomes;
@@ -194,6 +199,7 @@
 				7A7281CE1726BA7500A3C8E2 /* AppDelegate.m in Sources */,
 				7A7281DD1726BA7500A3C8E2 /* ViewController.m in Sources */,
 				7A7282781729DF6D00A3C8E2 /* Compteur.m in Sources */,
+				7A0E5E5B173335FA009F322A /* Statistiques.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

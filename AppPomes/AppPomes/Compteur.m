@@ -15,9 +15,35 @@
     self = [super initWithFrame:frame];
     if (self) {
         
+//        UIDevice *device = [UIDevice alloc];
+//        UIApplication *capteur = [UIApplication alloc];
+        leTimerInterval = [[NSNumber alloc]initWithFloat:0];
+        
+
+        [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addPompesCapteur:) name:@"UIDeviceProximityStateDidChangeNotification" object:nil];
+
+        
+//        [device setProximityMonitoringEnabled:YES];
+//
+//        if ([device isProximityMonitoringEnabled])
+//        {
+//            NSLog(@"Capteur OK");
+//        }
+//        
+//        if ([[UIDevice currentDevice] proximityState])
+//        {
+//            [self addPompes:[UIDevice currentDevice]];
+//            NSLog(@"Test capteur de proximité");
+//        }
+//        
+
+        
+        
         //Initialisation du compteur
         compteurPompes = [[NSNumber alloc]initWithInt:0];
         leTimer = [[NSNumber alloc] initWithFloat:0];
+        
         
         //Initialisation de la vue
         self.backgroundColor = [UIColor colorWithRed:0.682353 green:0.933333 blue:0 alpha:1];
@@ -35,23 +61,31 @@
         labTimer = [[UILabel alloc] initWithFrame:CGRectMake(0 , 0, 100, 50)];
         [labTimer setCenter:CGPointMake(self.center.x, labCompteur.frame.origin.y+30)];
         [labTimer setFont:[UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:30]];
-        [labTimer setTextColor:[UIColor whiteColor]];
+        [labTimer setTextColor:[UIColor colorWithWhite:0 alpha:0.3]];
         [labTimer setBackgroundColor:[UIColor clearColor]];
         [labTimer setTextAlignment:NSTextAlignmentCenter];
         [self addSubview:labTimer];
         
-        UITapGestureRecognizer *tapCompteur = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(addPompesTap:)];
+        UITapGestureRecognizer *tapCompteur = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(addPompes:)];
         [self addGestureRecognizer:tapCompteur];
         
         UISwipeGestureRecognizer *swipeCompteur = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(quitCompteur:)];
-        swipeCompteur.direction = UISwipeGestureRecognizerDirectionRight;
+        swipeCompteur.direction = UISwipeGestureRecognizerDirectionUp;
         [self addGestureRecognizer:swipeCompteur];
     }
     return self;
 }
 
-- (void)addPompesTap:(UITapGestureRecognizer *)recognizer
+- (void)addPompes:(id)recognizer
 {
+//    if (typeof(recognizer) == typeof(UITapGestureRecognizer) {
+//        NSLog(@"Tap Gesture");
+//    }
+//    else if(typeof (recognizer) == typeof(UIDevice) ) {
+//        NSLog(@"Capteur de proximité");
+//    }
+
+        
     
     if(labCompteur.text.integerValue == 0)
         labCompteur.font = [UIFont fontWithName:@"HelveticaNeue-CondensedBold" size:200];
@@ -71,6 +105,17 @@
     refreshTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(temps:) userInfo:nil repeats:YES];
 //    [intervalTimer initWithFireDate:[NSDate date] interval:1 target:self selector:@selector(temps:) userInfo:nil repeats:YES];
 //    intervalTimer = [NSTimer timerWithTimeInterval:0.1 target:self selector:@selector(temps:) userInfo:nil repeats:YES];
+    
+}
+
+- (void)addPompesCapteur:(id)sender
+{
+    if ([leTimerInterval floatValue] >= 0.5)
+    {
+        [self addPompes:sender];
+    }
+    else
+        NSLog(@"Interval trop court");
 }
 
 - (void)quitCompteur:(UISwipeGestureRecognizer *)recognizer
@@ -78,9 +123,11 @@
     NSLog(@"Quit compteur");
     [refreshTimer invalidate];
     refreshTimer = nil;
-    
+
+    [[UIDevice currentDevice] setProximityMonitoringEnabled:NO];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
   	[UIView animateWithDuration:0.7 animations:^{
-        [self setFrame:CGRectMake(self.frame.size.width, 0, self.frame.size.width, self.frame.size.height)];
+        [self setFrame:CGRectMake(0, -self.frame.size.height, self.frame.size.width, self.frame.size.height)];
     }];
 
     [self performSelector:@selector(suppVue:) withObject:self afterDelay:0.7];

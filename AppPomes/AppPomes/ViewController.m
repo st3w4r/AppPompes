@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Compteur.h"
+#import "Statistiques.h"
 
 @interface ViewController ()
     
@@ -26,6 +27,8 @@ UIButton *btnStats;
 	// Do any additional setup after loading the view, typically from a nib.
     NSString *msg = @"Hello World";
     NSLog(@"%@",msg);
+    
+    laVuePrincipal = self.view;
     
     //Bouton commencer
 
@@ -75,20 +78,45 @@ UIButton *btnStats;
         [button setAlpha:1.0];
     }
     
-    if (button.tag == 1)
-    {
-        [self afficherCompteur];
-    }
+    [self afficherVue:button];
     
     NSLog(@"Button: %@",button.titleLabel.text);
     NSLog(@"Tag: %d",button.tag);
     
 }
 
-- (void)afficherCompteur
+- (void)afficherVue:(id)sender
 {
-    _compteur = [[Compteur alloc]initWithFrame:self.view.bounds];
-    [self.view addSubview:_compteur];
+    UIButton *unBouton = sender;
+    
+    if (unBouton.tag == 1)
+    {
+        _compteur = [[Compteur alloc]initWithFrame:self.view.bounds];
+        _compteur.frame = CGRectMake(0,-laVuePrincipal.frame.size.height, laVuePrincipal.frame.size.width, laVuePrincipal.frame.size.height);
+        
+        [UIView animateWithDuration:0.7 animations:^{
+            _compteur.frame = CGRectMake(0,0, laVuePrincipal.frame.size.width, laVuePrincipal.frame.size.height);
+        }];
+        [self.view addSubview:_compteur];
+    }
+    else if (unBouton.tag == 2)
+    {
+        
+    }
+    else if (unBouton.tag == 3)
+    {
+
+        _statistiques = [[Statistiques alloc]initWithFrame:self.view.bounds];
+        _statistiques.frame = CGRectMake(0,laVuePrincipal.frame.size.height, laVuePrincipal.frame.size.width, laVuePrincipal.frame.size.height);        
+        
+        [UIView animateWithDuration:0.7 animations:^{
+//            [laVuePrincipal setFrame:CGRectMake(0,-laVuePrincipal.frame.size.height+100, laVuePrincipal.frame.size.width, laVuePrincipal.frame.size.height)];
+            _statistiques.frame = CGRectMake(0,0, laVuePrincipal.frame.size.width, laVuePrincipal.frame.size.height);
+        }];
+    
+        [laVuePrincipal addSubview:_statistiques];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning
