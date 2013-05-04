@@ -27,27 +27,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7A0E5E5C173590B5009F322A /* Statistiques.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Statistiques.h; sourceTree = "<group>"; };
-		7A0E5E5D173590B5009F322A /* Statistiques.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Statistiques.m; sourceTree = "<group>"; };
-		7A7281BA1726BA7500A3C8E2 /* AppPomes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPomes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A0E5E5C173590B5009F322A /* Statistiques.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Statistiques.h; path = AppPompes/Statistiques.h; sourceTree = "<group>"; };
+		7A0E5E5D173590B5009F322A /* Statistiques.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Statistiques.m; path = AppPompes/Statistiques.m; sourceTree = "<group>"; };
+		7A7281BA1726BA7500A3C8E2 /* AppPompes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPompes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7281BD1726BA7500A3C8E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7A7281BF1726BA7500A3C8E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7A7281C11726BA7500A3C8E2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7A7281C51726BA7500A3C8E2 /* AppPomes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppPomes-Info.plist"; sourceTree = "<group>"; };
+		7A7281C51726BA7500A3C8E2 /* AppPompes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "AppPompes-Info.plist"; path = "AppPompes/AppPompes-Info.plist"; sourceTree = "<group>"; };
 		7A7281C71726BA7500A3C8E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7A7281C91726BA7500A3C8E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7A7281CB1726BA7500A3C8E2 /* AppPomes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppPomes-Prefix.pch"; sourceTree = "<group>"; };
-		7A7281CC1726BA7500A3C8E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		7A7281CD1726BA7500A3C8E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7A7281CF1726BA7500A3C8E2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		7A7281D11726BA7500A3C8E2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7A7281C91726BA7500A3C8E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AppPompes/main.m; sourceTree = "<group>"; };
+		7A7281CB1726BA7500A3C8E2 /* AppPompes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppPompes-Prefix.pch"; path = "AppPompes/AppPompes-Prefix.pch"; sourceTree = "<group>"; };
+		7A7281CC1726BA7500A3C8E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AppPompes/AppDelegate.h; sourceTree = "<group>"; };
+		7A7281CD1726BA7500A3C8E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = AppPompes/AppDelegate.m; sourceTree = "<group>"; };
+		7A7281CF1726BA7500A3C8E2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = AppPompes/Default.png; sourceTree = "<group>"; };
+		7A7281D11726BA7500A3C8E2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "AppPompes/Default@2x.png"; sourceTree = "<group>"; };
 		7A7281D31726BA7500A3C8E2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7A7281D61726BA7500A3C8E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		7A7281D91726BA7500A3C8E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		7A7281DB1726BA7500A3C8E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7A7281DC1726BA7500A3C8E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7A7282761729DF6D00A3C8E2 /* Compteur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compteur.h; sourceTree = "<group>"; };
-		7A7282771729DF6D00A3C8E2 /* Compteur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compteur.m; sourceTree = "<group>"; };
+		7A7281DB1726BA7500A3C8E2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = AppPompes/ViewController.h; sourceTree = "<group>"; };
+		7A7281DC1726BA7500A3C8E2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = AppPompes/ViewController.m; sourceTree = "<group>"; };
+		7A7282761729DF6D00A3C8E2 /* Compteur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Compteur.h; path = AppPompes/Compteur.h; sourceTree = "<group>"; };
+		7A7282771729DF6D00A3C8E2 /* Compteur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Compteur.m; path = AppPompes/Compteur.m; sourceTree = "<group>"; };
 		7AEC0FA1172CA3A600F7ACF2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7AEC0FA3172CA3CA00F7ACF2 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,7 +71,7 @@
 			children = (
 				7AEC0FA3172CA3CA00F7ACF2 /* Default-Portrait@2x~ipad.png */,
 				7AEC0FA1172CA3A600F7ACF2 /* Default-568h@2x.png */,
-				7A7281C31726BA7500A3C8E2 /* AppPomes */,
+				7A7281C31726BA7500A3C8E2 /* AppPompes */,
 				7A7281BC1726BA7500A3C8E2 /* Frameworks */,
 				7A7281BB1726BA7500A3C8E2 /* Products */,
 			);
@@ -80,7 +80,7 @@
 		7A7281BB1726BA7500A3C8E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7A7281BA1726BA7500A3C8E2 /* AppPomes.app */,
+				7A7281BA1726BA7500A3C8E2 /* AppPompes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +95,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7A7281C31726BA7500A3C8E2 /* AppPomes */ = {
+		7A7281C31726BA7500A3C8E2 /* AppPompes */ = {
 			isa = PBXGroup;
 			children = (
 				7A0E5E5C173590B5009F322A /* Statistiques.h */,
@@ -110,16 +110,17 @@
 				7A7282771729DF6D00A3C8E2 /* Compteur.m */,
 				7A7281C41726BA7500A3C8E2 /* Supporting Files */,
 			);
+			name = AppPompes;
 			path = AppPomes;
 			sourceTree = "<group>";
 		};
 		7A7281C41726BA7500A3C8E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7A7281C51726BA7500A3C8E2 /* AppPomes-Info.plist */,
+				7A7281C51726BA7500A3C8E2 /* AppPompes-Info.plist */,
 				7A7281C61726BA7500A3C8E2 /* InfoPlist.strings */,
 				7A7281C91726BA7500A3C8E2 /* main.m */,
-				7A7281CB1726BA7500A3C8E2 /* AppPomes-Prefix.pch */,
+				7A7281CB1726BA7500A3C8E2 /* AppPompes-Prefix.pch */,
 				7A7281CF1726BA7500A3C8E2 /* Default.png */,
 				7A7281D11726BA7500A3C8E2 /* Default@2x.png */,
 				7A7281D31726BA7500A3C8E2 /* Default-568h@2x.png */,
@@ -130,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7A7281B91726BA7500A3C8E2 /* AppPomes */ = {
+		7A7281B91726BA7500A3C8E2 /* AppPompes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A7281E01726BA7500A3C8E2 /* Build configuration list for PBXNativeTarget "AppPomes" */;
+			buildConfigurationList = 7A7281E01726BA7500A3C8E2 /* Build configuration list for PBXNativeTarget "AppPompes" */;
 			buildPhases = (
 				7A7281B61726BA7500A3C8E2 /* Sources */,
 				7A7281B71726BA7500A3C8E2 /* Frameworks */,
@@ -142,9 +143,9 @@
 			);
 			dependencies = (
 			);
-			name = AppPomes;
+			name = AppPompes;
 			productName = AppPomes;
-			productReference = 7A7281BA1726BA7500A3C8E2 /* AppPomes.app */;
+			productReference = 7A7281BA1726BA7500A3C8E2 /* AppPompes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -156,7 +157,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Yanaël Barbier";
 			};
-			buildConfigurationList = 7A7281B51726BA7500A3C8E2 /* Build configuration list for PBXProject "AppPomes" */;
+			buildConfigurationList = 7A7281B51726BA7500A3C8E2 /* Build configuration list for PBXProject "AppPompes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -168,7 +169,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7A7281B91726BA7500A3C8E2 /* AppPomes */,
+				7A7281B91726BA7500A3C8E2 /* AppPompes */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +215,7 @@
 				7A7281C71726BA7500A3C8E2 /* en */,
 			);
 			name = InfoPlist.strings;
+			path = AppPompes;
 			sourceTree = "<group>";
 		};
 		7A7281D51726BA7500A3C8E2 /* MainStoryboard_iPhone.storyboard */ = {
@@ -222,6 +224,7 @@
 				7A7281D61726BA7500A3C8E2 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
+			path = AppPompes;
 			sourceTree = "<group>";
 		};
 		7A7281D81726BA7500A3C8E2 /* MainStoryboard_iPad.storyboard */ = {
@@ -230,6 +233,7 @@
 				7A7281D91726BA7500A3C8E2 /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
+			path = AppPompes;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -297,9 +301,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppPomes/AppPomes-Prefix.pch";
-				INFOPLIST_FILE = "AppPomes/AppPomes-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "AppPompes/AppPompes-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/AppPompes/AppPompes-Info.plist";
+				PRODUCT_NAME = AppPompes;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -308,9 +312,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppPomes/AppPomes-Prefix.pch";
-				INFOPLIST_FILE = "AppPomes/AppPomes-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "AppPompes/AppPompes-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/AppPompes/AppPompes-Info.plist";
+				PRODUCT_NAME = AppPompes;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -318,7 +322,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7A7281B51726BA7500A3C8E2 /* Build configuration list for PBXProject "AppPomes" */ = {
+		7A7281B51726BA7500A3C8E2 /* Build configuration list for PBXProject "AppPompes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A7281DE1726BA7500A3C8E2 /* Debug */,
@@ -327,7 +331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7A7281E01726BA7500A3C8E2 /* Build configuration list for PBXNativeTarget "AppPomes" */ = {
+		7A7281E01726BA7500A3C8E2 /* Build configuration list for PBXNativeTarget "AppPompes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A7281E11726BA7500A3C8E2 /* Debug */,
